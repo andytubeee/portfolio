@@ -91,6 +91,19 @@ header.masthead {
     align-items: center;
 }
 
+.school-txt {
+    color: white;
+    width: min-content;
+    height: min-content;
+}
+
+.school-txt:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #2f02d1!important;
+    border-color: #1a02d1!important
+}
+
 header.masthead .masthead-content {
     z-index: 1;
     position: relative;
@@ -100,6 +113,7 @@ header.masthead .masthead-content {
 @media (max-width:404px) {
     #learnmoreBtn {
         width: min-content;
+        font-size: 25px;
     }
 }
 
