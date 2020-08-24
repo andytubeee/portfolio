@@ -3,8 +3,6 @@ $(() => {
   document.querySelector('body').onload = () => {
     // document.getElementById('alwaysFullscreen').style.height =
     //   $(window).height() + 'px';
-    document.getElementById('introTopTxt').style.marginTop =
-      ($('#alwaysFullscreen').height() - $('#introTopTxt').height()) / 2 + 'px';
   };
   // Learn more button click
   $('#learnmoreBtn').click(() => {
@@ -15,4 +13,6 @@ $(() => {
       1000
     );
   });
+
+  $('.school-txt').click(() => window.open('https://jam.wrdsb.ca/', '_blank'));
 });
