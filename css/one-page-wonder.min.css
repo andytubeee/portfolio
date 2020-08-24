@@ -1,8 +1,8 @@
-/*!
- * Start Bootstrap - One Page Wonder v5.0.8 (https://startbootstrap.com/template-overviews/one-page-wonder)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-one-page-wonder/blob/master/LICENSE)
- */
+/* One Page Wonder CSS */
+
+html {
+    scroll-behavior: auto;
+}
 
 body {
     font-family: Lato;
@@ -21,15 +21,20 @@ body::-webkit-scrollbar {
 }
 
 .skillList {
-    padding-left: 20px;
-    align-content: flex-start;
     display: flex;
-    width: auto;
-    flex: auto;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0;
+}
+
+.skillListItem {
+    list-style: none;
+    display: inline-block;
+    width: calc(100% / 3);
+    height: max-content;
+    text-align: center;
+    cursor: alias;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -99,8 +104,8 @@ header.masthead {
 .school-txt:hover {
     cursor: pointer;
     text-decoration: none;
-    color: #2f02d1!important;
-    border-color: #1a02d1!important
+    color: #2f02d1;
+    border-color: #1a02d1;
 }
 
 header.masthead .masthead-content {
@@ -109,8 +114,10 @@ header.masthead .masthead-content {
     margin: 0 auto;
 }
 
-@media (max-width:404px) {
-    #learnmoreBtn {
+.learnmoreBtn {}
+
+@media (max-width:626px) {
+    .learnmoreBtn {
         width: min-content;
         font-size: 25px;
     }
@@ -177,13 +184,20 @@ header.masthead .bg-circle-4 {
 }
 
 .btn-primary {
+    font-size: medium;
+    border: none;
     background-color: #036ffc;
-    border-color: #0380fc
+}
+
+.btn-primary:hover {
+    border: none;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-    background-color: #2f02d1!important;
-    border-color: #1a02d1!important
+    background-color: #2f02d1;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(52, 83, 207, 1);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(52, 83, 207, 1);
+    box-shadow: 10px 10px 15px 0px rgba(52, 83, 207, 1);
 }
 
 .btn-primary:focus {
