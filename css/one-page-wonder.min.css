@@ -249,6 +249,10 @@ header.masthead .bg-circle-4 {
     border: none;
 }
 
+.contact-btns-item::focus {
+    outline: none;
+}
+
 .littletransparentfooter {
     background-color: rgba(0, 0, 0, .7)
 }

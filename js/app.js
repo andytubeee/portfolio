@@ -48,4 +48,5 @@ $(() => {
       alert("Failed: " + err);
     }
   });
+  $('button.ig-grad').click(()=>window.open('https://www.instagram.com/andrew.apk/', '_blank'))
 });
