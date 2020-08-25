@@ -84,6 +84,67 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: .1rem
 }
 
+div#particles {
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    z-index: 0;
+}
+
+div.introduction {
+    color: white;
+    border: 1px solid black;
+    width: max-content;
+    position: absolute;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+h1.full-name {
+    font-size: 110px;
+    cursor: default;
+}
+
+h2.school-name {
+    text-align: center;
+    padding: 0;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2.school-name:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #2f02d1;
+    border-color: #1a02d1;
+    border: 1px solid black;
+}
+
+h2.grade {
+    text-align: center;
+    padding: 0;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+}
+
+.learnmoreBtn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
+
 header.masthead {
     margin: 0;
     padding: 0;
@@ -103,7 +164,6 @@ header.masthead {
 }
 
 /* Test */
-
 
 .school-txt {
     color: white;

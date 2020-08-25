@@ -1,9 +1,4 @@
-// Particles JS
-$('.masthead').each(function (e) {
-  $(this).attr('id', 'particle-' + e);
-
-  particlesJS.load('particle-' + e, 'js/p.json');
-});
+particlesJS.load('particles', 'js/p.json');
 $(() => {
   // Page onload
   document.querySelector('body').onload = () => {
