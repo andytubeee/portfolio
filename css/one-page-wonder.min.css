@@ -97,7 +97,6 @@ div#particles {
 
 div.introduction {
     color: white;
-    border: 1px solid black;
     width: max-content;
     position: absolute;
     z-index: 1;
@@ -105,7 +104,8 @@ div.introduction {
     margin-right: auto;
     left: 0;
     right: 0;
-    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 h1.full-name {
@@ -126,7 +126,6 @@ h2.school-name:hover {
     text-decoration: none;
     color: #2f02d1;
     border-color: #1a02d1;
-    border: 1px solid black;
 }
 
 h2.grade {
