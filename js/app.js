@@ -1,15 +1,25 @@
+// Particles JS
+$('.masthead').each(function (e) {
+  $(this).attr('id', 'particle-' + e);
+
+  particlesJS.load('particle-' + e, 'js/p.json');
+});
 $(() => {
   // Page onload
   document.querySelector('body').onload = () => {
   };
   // Learn more button click
   $('#learnmoreBtn').click(() => {
-    $('html, body').animate({ scrollTop: $('header.masthead').height() + $('nav.navbar').height() }, 800);
-    console.log($('header.masthead').height());
+    $([document.documentElement, document.body]).animate(
+      {
+        scrollTop: $('#scrollDown').offset().top,
+      },
+      1000
+    );
   });
 
   // Tooltip
-  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="tooltip"]').tooltip({ html: true });
 
 
   // School Website
@@ -48,5 +58,14 @@ $(() => {
       alert("Failed: " + err);
     }
   });
-  $('button.ig-grad').click(()=>window.open('https://www.instagram.com/andrew.apk/', '_blank'))
+  $('button.ig-grad').click(() => window.open('https://www.instagram.com/andrew.apk/', '_blank'));
+  $('button.phone-fab').click(() => {
+    var $myNum = "+15197546616";
+    try {
+      copyToClipboard($myNum);
+      alert("My phone number is copied to your clipboard. :D");
+    } catch (err) {
+      alert("Failed: " + err);
+    }
+  });
 });
