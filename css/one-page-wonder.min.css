@@ -235,7 +235,18 @@ header.masthead .bg-circle-4 {
 }
 
 .contact-btns {
-    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    outline: none;
+}
+
+.contact-btns-item {
+    width: 100px;
+    display: inline-block;
+    margin: auto;
+    border: none;
 }
 
 .littletransparentfooter {
@@ -248,11 +259,9 @@ header.masthead .bg-circle-4 {
     box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
     color: white;
     font-size: 35px;
-    margin: 0 auto;
     width: max-content;
     height: max-content;
-    margin-left: 10px;
-    
+    /* margin-left: 90px; */
 }
 
 .linkedin-color {
@@ -268,7 +277,8 @@ header.masthead .bg-circle-4 {
     width: max-content;
     height: max-content;
     background-color: #f0f0f0;
-    margin-left: 10px;
+    font-size: 35px;
+    /* margin-left: 10px; */
 }
 
 .github-btn:hover {
@@ -281,8 +291,8 @@ header.masthead .bg-circle-4 {
     width: max-content;
     height: max-content;
     background: #f0f0f0;
-    position: absolute;
-    margin-left: 10px;
+    /* position: absolute; */
+    /* margin-left: 10px; */
 }
 
 .email-color:hover {
