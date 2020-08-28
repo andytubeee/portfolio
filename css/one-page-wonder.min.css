@@ -22,8 +22,10 @@ body::-webkit-scrollbar {
     /* display: none; */
 }
 
-.skillList {
-    display: inline;
+div.web-skills {}
+
+/* .skillList {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
@@ -31,12 +33,20 @@ body::-webkit-scrollbar {
 }
 
 .skillListItem {
-    list-style: none;
     display: inline-block;
-    width: max-content;
-    height: max-content;
-    text-align: center;
+    width: calc(100% / 3);
+    padding: 16px;
     cursor: alias;
+} */
+
+.skillList {
+    overflow: auto;
+    padding: 0;
+}
+
+.skillListItem {
+    float: left;
+    margin: 0 20px;
 }
 
 .skillListItemSmall {

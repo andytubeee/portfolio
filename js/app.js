@@ -23,7 +23,9 @@ $(() => {
   // Skills tooltip
   var mySkills = document.querySelectorAll('li.skillListItem');
   mySkills.forEach((skills) => {
-    // skills.onmouseenter = () => console.log(skills.innerHTML);
+    skills.onmouseenter = () => {
+      
+    };
   });
 
   // Contact me scroll
