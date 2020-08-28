@@ -335,6 +335,11 @@ header.masthead .bg-circle-4 {
     /* margin-left: 90px; */
 }
 
+.ig-grad:hover {
+    color: #e6e6e6;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .5);
+}
+
 .linkedin-color {
     background: #0e76ab;
     color: white;
@@ -343,11 +348,16 @@ header.masthead .bg-circle-4 {
     height: max-content;
 }
 
+.linkedin-color:hover {
+    color: #e6e6e6;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .5);
+}
+
 .github-btn {
     box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
     width: max-content;
     height: max-content;
-    background-color: #f0f0f0;
+    background-color: #f0f0ff;
     font-size: 35px;
     /* margin-left: 10px; */
 }
@@ -355,6 +365,7 @@ header.masthead .bg-circle-4 {
 .github-btn:hover {
     color: #f0f0f0;
     background: #212529;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .65);
 }
 
 .email-color {
@@ -369,6 +380,7 @@ header.masthead .bg-circle-4 {
 .email-color:hover {
     color: #f0f0f0;
     background: #212529;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .65);
 }
 
 .phone-fab {
@@ -381,4 +393,5 @@ header.masthead .bg-circle-4 {
 .phone-fab:hover {
     color: #f0f0f0;
     background: #212529;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .65);
 }
