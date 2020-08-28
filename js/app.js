@@ -18,13 +18,13 @@ $(() => {
 
 
   // School Website
-  $('.school-txt').click(() => window.open('https://jam.wrdsb.ca/', '_blank'));
+  $('h2.school-name').click(() => window.open('https://jam.wrdsb.ca/', '_blank'));
 
   // Skills tooltip
   var mySkills = document.querySelectorAll('li.skillListItem');
   mySkills.forEach((skills) => {
     skills.onmouseenter = () => {
-      
+
     };
   });
 
