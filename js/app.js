@@ -34,6 +34,9 @@ $(() => {
     return false;
   });
 
+  // Direct to Projects.html Page
+  $('a.projects-txt').click(() => window.location.href = "projects/projects.html");
+
   const copyToClipboard = str => {
     const el = document.createElement('textarea');
     el.value = str;

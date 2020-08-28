@@ -1,4 +1,4 @@
-/* One Page Wonder CSS */
+/* Projects CSS */
 
 html {
     scroll-behavior: auto;
@@ -21,21 +21,6 @@ html, body {
 body::-webkit-scrollbar {
     display: none;
 }
-
-/* .skillList {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    padding-left: 0;
-}
-
-.skillListItem {
-    display: inline-block;
-    width: calc(100% / 3);
-    padding: 16px;
-    cursor: alias;
-} */
 
 a.contactme-txt, a.projects-txt {
     cursor: pointer;
@@ -120,17 +105,21 @@ div.introduction {
     transform: translateY(-50%);
 }
 
-h1.full-name {
+h1.title {
     font-size: 110px;
     cursor: default;
+    text-align: center;
 }
 
-h2.school-name {
+h3.desc-txt {
     text-align: center;
-    padding: 0;
+}
+
+.intro-btn {
+    position: flex;
     width: max-content;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 h2.school-name:hover {
