@@ -19,10 +19,8 @@ html, body {
 }
 
 body::-webkit-scrollbar {
-    /* display: none; */
+    display: none;
 }
-
-div.web-skills {}
 
 /* .skillList {
     display: flex;

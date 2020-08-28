@@ -14,7 +14,7 @@ $(() => {
   });
 
   // Tooltip
-  $('[data-toggle="tooltip"]').tooltip({ html: true });
+  $('[data-toggle="tooltip"]').tooltip();
 
 
   // School Website
