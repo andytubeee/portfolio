@@ -10,4 +10,13 @@ $(() => {
         $('html, body').animate({ scrollTop: $(document).height() }, 800);
         return false;
     });
+
+    // View project btn
+    $('btn.intro-btn').click(() => {
+        $('html, body').animate({ scrollTop: $('#scrollDown').offset().top, }, 800);
+        return false;
+    });
+
+    // Refresh the page when user clicks project text again on the same page
+    $('a.projects-txt').click(() => location.reload());
 });
