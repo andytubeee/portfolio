@@ -17,6 +17,57 @@ $(() => {
         return false;
     });
 
+    // cpclip func
+    const copyToClipboard = str => {
+        const el = document.createElement('textarea');
+        el.value = str;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    };
+
+    // Contact Button Clicks
+    $('button.linkedin-color').click(() => window.open('https://www.linkedin.com/in/andrew-yang-7a9402198/', '_blank'));
+    $('button.github-btn').click(() => window.open('https://www.github.com/andytubeee', '_blank'));
+    $('button.email-color').click(() => {
+        var $myEmail = "andy.tubeee@gmail.com";
+        try {
+            copyToClipboard($myEmail);
+            Swal.fire(
+                'Done',
+                'My email is copied to your clipboard!',
+                'success'
+            );
+        } catch (err) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Something went wrong!',
+                footer: 'Please try again!'
+            });
+        }
+    });
+    $('button.ig-grad').click(() => window.open('https://www.instagram.com/andrew.apk/', '_blank'));
+    $('button.phone-fab').click(() => {
+        var $myNum = "+15197546616";
+        try {
+            copyToClipboard($myNum);
+            Swal.fire(
+                'Done',
+                'My phone number is copied to your clipboard!',
+                'success'
+            );
+        } catch (err) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Something went wrong!',
+                footer: 'Please try again!'
+            });
+        }
+    });
+
     // Refresh the page when user clicks project text again on the same page
     $('a.projects-txt').click(() => location.reload());
 

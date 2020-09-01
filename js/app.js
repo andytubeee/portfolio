@@ -53,9 +53,18 @@ $(() => {
     var $myEmail = "andy.tubeee@gmail.com";
     try {
       copyToClipboard($myEmail);
-      alert("My email is copied to your clipboard. :D");
+      Swal.fire(
+        'Done',
+        'My email is copied to your clipboard!',
+        'success'
+      );
     } catch (err) {
-      alert("Failed: " + err);
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong!',
+        footer: 'Please try again!'
+      });
     }
   });
   $('button.ig-grad').click(() => window.open('https://www.instagram.com/andrew.apk/', '_blank'));
@@ -63,9 +72,18 @@ $(() => {
     var $myNum = "+15197546616";
     try {
       copyToClipboard($myNum);
-      alert("My phone number is copied to your clipboard. :D");
+      Swal.fire(
+        'Done',
+        'My phone number is copied to your clipboard!',
+        'success'
+      );
     } catch (err) {
-      alert("Failed: " + err);
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong!',
+        footer: 'Please try again!'
+      });
     }
   });
 });
