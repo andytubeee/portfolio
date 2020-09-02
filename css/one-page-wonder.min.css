@@ -16,6 +16,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -99,6 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 div#particles {
     height: 100%;
     width: 100%;
+    min-width: 100%;
     background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
     background-repeat: no-repeat;
     background-position: center center;
@@ -109,6 +111,8 @@ div#particles {
 
 div.introduction {
     color: white;
+    height: max-content;
+    display: table-cell;
     width: max-content;
     position: absolute;
     z-index: 1;
@@ -118,6 +122,13 @@ div.introduction {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+}
+
+@media (max-width:680px) {
+    .introduction {
+        border: 1px solid black;
+        font-size: 10vw;
+    }
 }
 
 h1.full-name {
@@ -200,12 +211,12 @@ header.masthead-content {
     border: brown 1px solid;
 }
 
-@media (max-width:626px) {
-    .learnmoreBtn {
+/* @media (max-width:626px) {
+    .mam-btn {
         width: min-content;
         font-size: 25px;
     }
-}
+} */
 
 header.masthead .masthead-content .masthead-heading {
     font-size: 4rem

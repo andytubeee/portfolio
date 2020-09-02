@@ -73,6 +73,8 @@ $(() => {
 
     // Project Devpost Links
     $('img.tc-img').click(() => window.open("https://devpost.com/software/treecompanion", "_blank"));
+    $('img.vg-img').click(() => window.open("https://devpost.com/software/veglife", "_blank"));
+    $('img.sc-img').click(() => window.open("https://devpost.com/software/sharecare-gzhsqr", "_blank"));
 
     //Tree Companion
     $('button.tc-demo').click(() => window.open("https://www.youtube.com/watch?v=QqRB1BK4_zk", "_blank"));
@@ -89,5 +91,7 @@ $(() => {
         });
     });
 
+    // ShareCare
+    $('button.sc-demo').click(() => window.open("https://www.youtube.com/watch?v=lemNhB6HhGo", "_blank"));
 
 });
